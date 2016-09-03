@@ -25,7 +25,9 @@ namespace Postgres.Native
             var zipArchive = new ZipArchive(pgStream);
             zipArchive.ExtractToDirectory(pgDestination);
 
-            return Task.FromResult(new DirectoryInfo(pgDestination));
+            var pgBinaryLocation = Path.Combine(pgDestination, "pgsql");
+
+            return Task.FromResult(new DirectoryInfo(pgBinaryLocation));
         }
     }
 }

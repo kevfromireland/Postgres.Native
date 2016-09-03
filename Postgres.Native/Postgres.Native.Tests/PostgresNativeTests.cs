@@ -12,7 +12,7 @@ namespace Postgres.Native.Tests
         {
             var pgLocation = await new PostgresBinariesExtractor().ExtractToTemporaryPath();
 
-            Assert.That(File.Exists(Path.Combine(pgLocation.FullName, "pgsql", "bin", "postgres.exe")),
+            Assert.That(File.Exists(Path.Combine(pgLocation.FullName, "bin", "postgres.exe")),
                 "Unable to find postgres executable after extracting");
         }
     }
