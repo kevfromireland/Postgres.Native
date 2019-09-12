@@ -12,7 +12,7 @@ namespace Postgres.Native
         {
             var pgAssembly = Assembly.GetExecutingAssembly();
 
-            var pgStream = pgAssembly.GetManifestResourceStream("Postgres.Native.postgresql-9.5.4-1-windows-x64-binaries.zip");
+            var pgStream = pgAssembly.GetManifestResourceStream("Postgres.Native.postgresql-11.5-1-windows-x64-binaries.zip");
 
             if (pgStream == null)
             {
