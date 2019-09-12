@@ -4,6 +4,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageId>Postgres.Native</PackageId>
+    <Version>11.5.1</Version>
+    <Authors>Kevin Boyle</Authors>
+    <Description>This is the Postgres database binaries for Windows packaged so they can be easily consumed by tests.</Description>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="postgresql-11.5-1-windows-x64-binaries.zip" />
   </ItemGroup>
