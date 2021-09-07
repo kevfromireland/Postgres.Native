@@ -12,11 +12,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="postgresql-11.5-1-windows-x64-binaries.zip" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="postgresql-11.5-1-windows-x64-binaries.zip" />
+    <None Remove="postgresql-13.4-1-windows-x64-binaries.zip" />
+    <EmbeddedResource Include="postgresql-13.4-1-windows-x64-binaries.zip" />
   </ItemGroup>
 
 </Project>
